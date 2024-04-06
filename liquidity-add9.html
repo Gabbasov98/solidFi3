@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="" class="header__logo">
+                        <img class="_view1" src="img/logo4.webp" alt="">
+                        <img class="_view2" src="img/logo6.webp" alt="">
+                    </a>
+
+                    <div class="menu">
+                        <nav class="nav">
+                            <a href="" class="nav__link _active">Swap</a>
+                            <a href="" class="nav__link">Liquidity</a>
+                            <a href="" class="nav__link">Farm</a>
+                            <a href="" class="nav__link">Pools</a>
+                            <a href="" class="nav__link">Referal Program</a>
+                            <a href="" class="nav__link">About QNS</a>
+                            <a href="" class="nav__link">Team</a>
+                            <a href="" class="nav__link">Docs</a>
+                            <a href="" class="nav__link">Audits</a>
+                        </nav>
+
+                        <div class="header-socials">
+                            <a href="" class="header-socials__item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.70996 3.3335L13.4875 16.6668H17.0433L7.26579 3.3335H3.70996Z" stroke="#98A1C0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.70996 16.6668L9.34996 11.0268M11.4 8.97683L17.0433 3.3335" stroke="#98A1C0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="" class="header-socials__item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.377 20C15.8998 20 20.377 15.5228 20.377 10C20.377 4.47715 15.8998 0 10.377 0C4.85411 0 0.376953 4.47715 0.376953 10C0.376953 15.5228 4.85411 20 10.377 20ZM10.377 4C8.16781 4 6.37695 5.79086 6.37695 8V15H14.377V8C14.377 5.79086 12.5861 4 10.377 4Z" fill="#98A1C0" />
+                                </svg>
+                            </a>
+                            <a href="" class="header-socials__item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.01765 4.29688C9.13293 4.29688 11.6582 6.83973 11.6582 9.97628C11.6582 13.1128 9.13274 15.6555 6.01765 15.6555C2.90256 15.6555 0.376953 13.1128 0.376953 9.97628C0.376953 6.83973 2.90237 4.29688 6.01765 4.29688ZM15.0254 4.62956C16.5831 4.62956 17.8458 7.02313 17.8458 9.97628H17.846C17.846 12.9287 16.5833 15.323 15.0256 15.323C13.468 15.323 12.2053 12.9287 12.2053 9.97628C12.2053 7.0239 13.4678 4.62956 15.0254 4.62956ZM19.385 5.18646C19.9327 5.18646 20.377 7.3309 20.377 9.97628C20.377 12.6209 19.9329 14.7661 19.385 14.7661C18.8371 14.7661 18.3933 12.6215 18.3933 9.97628C18.3933 7.33109 18.8373 5.18646 19.385 5.18646Z" fill="#98A1C0" />
+                                </svg>
+                            </a>
+                            <a href="" class="header-socials__item">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.7533 0.774336L1.03427 7.64254C0.321222 7.96238 0.0800499 8.60289 0.861925 8.9505L5.40763 10.4026L16.3986 3.57484C16.9987 3.14621 17.613 3.26051 17.0844 3.73203L7.64466 12.3232L7.34813 15.959C7.62278 16.5204 8.12567 16.523 8.44645 16.244L11.0581 13.76L15.5309 17.1267C16.5698 17.7449 17.1351 17.346 17.3586 16.2129L20.2924 2.24922C20.597 0.854492 20.0775 0.239961 18.7533 0.774336Z" fill="#98A1C0" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="theme-switch">
+                            <button class="theme-switch__btn _view1" data-theme="light">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.0017 2.99994C12.1337 2.99994 12.2647 2.99994 12.3947 2.99994C11.1101 4.19365 10.2843 5.79979 10.061 7.53916C9.83772 9.27854 10.231 11.0412 11.1725 12.5207C12.1139 14.0002 13.5441 15.103 15.2143 15.6374C16.8846 16.1718 18.6893 16.1041 20.3147 15.4459C19.6895 16.9504 18.6675 18.257 17.3579 19.2262C16.0483 20.1954 14.5002 20.791 12.8786 20.9493C11.2571 21.1077 9.623 20.8229 8.15062 20.1253C6.67825 19.4278 5.42285 18.3436 4.51832 16.9885C3.6138 15.6334 3.09409 14.0582 3.01462 12.4309C2.93515 10.8036 3.29892 9.18524 4.06711 7.74846C4.8353 6.31167 5.9791 5.11037 7.3765 4.27268C8.7739 3.43499 10.3725 2.99234 12.0017 2.99194V2.99994Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="theme-switch__btn _view2" data-theme="dark">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.23438 12C9.23438 12.7956 9.55045 13.5587 10.1131 14.1213C10.6757 14.6839 11.4387 15 12.2344 15C13.03 15 13.7931 14.6839 14.3557 14.1213C14.9183 13.5587 15.2344 12.7956 15.2344 12C15.2344 11.2044 14.9183 10.4413 14.3557 9.87868C13.7931 9.31607 13.03 9 12.2344 9C11.4387 9 10.6757 9.31607 10.1131 9.87868C9.55045 10.4413 9.23438 11.2044 9.23438 12Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.2344 5V5.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.2344 7V7.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M19.2344 12V12.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.2344 17V17.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.2344 19V19.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.23438 17V17.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M5.23438 12V12.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.23438 7V7.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="header-action">
+                        <div class="theme-switch">
+                            <button class="theme-switch__btn _view1" data-theme="light">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.0017 2.99994C12.1337 2.99994 12.2647 2.99994 12.3947 2.99994C11.1101 4.19365 10.2843 5.79979 10.061 7.53916C9.83772 9.27854 10.231 11.0412 11.1725 12.5207C12.1139 14.0002 13.5441 15.103 15.2143 15.6374C16.8846 16.1718 18.6893 16.1041 20.3147 15.4459C19.6895 16.9504 18.6675 18.257 17.3579 19.2262C16.0483 20.1954 14.5002 20.791 12.8786 20.9493C11.2571 21.1077 9.623 20.8229 8.15062 20.1253C6.67825 19.4278 5.42285 18.3436 4.51832 16.9885C3.6138 15.6334 3.09409 14.0582 3.01462 12.4309C2.93515 10.8036 3.29892 9.18524 4.06711 7.74846C4.8353 6.31167 5.9791 5.11037 7.3765 4.27268C8.7739 3.43499 10.3725 2.99234 12.0017 2.99194V2.99994Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="theme-switch__btn _view2" data-theme="dark">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.23438 12C9.23438 12.7956 9.55045 13.5587 10.1131 14.1213C10.6757 14.6839 11.4387 15 12.2344 15C13.03 15 13.7931 14.6839 14.3557 14.1213C14.9183 13.5587 15.2344 12.7956 15.2344 12C15.2344 11.2044 14.9183 10.4413 14.3557 9.87868C13.7931 9.31607 13.03 9 12.2344 9C11.4387 9 10.6757 9.31607 10.1131 9.87868C9.55045 10.4413 9.23438 11.2044 9.23438 12Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.2344 5V5.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.2344 7V7.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M19.2344 12V12.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.2344 17V17.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.2344 19V19.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.23438 17V17.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M5.23438 12V12.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.23438 7V7.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+
+
+
+                        <a href="" class="header-action__btn m-btn m-btn-blue">
+                            <img src="img/wallet.svg" alt="">
+                            <span>Connect Wallet</span>
+                        </a>
+
+
+                    </div>
+                    <button class="burger">
+                        <svg class="_view1" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66406 10H33.3307" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66406 20H33.3307" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66406 30H33.3307" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg class="_view2" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.33594 1.33325L6.66927 6.66659M6.66927 1.33325L1.33594 6.66659" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <section class="page-block">
+                <div class="container">
+                    <div class="page-block__inner">
+                        <div class="liquidity-add">
+                            <div class="modal__top">
+                                <div class="text20 text20-mob medium-text">
+                                    Import Pool
+                                </div>
+                                <a href="" class="modal__close _back">
+                                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.3359 20.5L13.3359 16.5L17.3359 12.5" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="merge-fields">
+                                <div class="withdraw-field">
+                                    <input type="text" readonly>
+                                    <div class="withdraw-field__token">
+                                        <img src="img/eth.svg" alt="">
+                                        <span>ETH</span>
+                                        <img class="withdraw-field__token-arrow" src="img/select-arrow2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="withdraw-field _type2">
+                                    <input type="text" readonly>
+                                    <div class="withdraw-field__token">
+                                        <img src="img/currency2.svg" alt="">
+                                        <span class="gray-text">Select token</span>
+                                        <img class="withdraw-field__token-arrow" src="img/select-arrow2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="merge-fields__arrow">
+                                    <img src="img/plus3.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="_mt24">
+                                <div class="text16 text-center gray-text opacity-50">
+                                    Select a token to find your liquidity
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

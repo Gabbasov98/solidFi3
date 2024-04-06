@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="liquidity.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/No liquidity found.
+        </a>
+        <a href="liquidity2.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Balance
+        </a>
+        <a href="liquidity-remove.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Remove
+        </a>
+        <a href="liquidity-remove2.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Remove 2
+        </a>
+        <a href="liquidity-remove3.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Remove 3
+        </a>
+        <a href="liquidity-add.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Add
+        </a>
+        <a href="liquidity-add2.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Add 2
+        </a>
+        <a href="liquidity-add3.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Add 3
+        </a>
+        <a href="liquidity-add4.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Add 4
+        </a>
+        <a href="liquidity-add5.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Add 5
+        </a>
+        <a href="liquidity-add6.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Add 6
+        </a>
+        <a href="liquidity-add7.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Add 7
+        </a>
+        <a href="liquidity-add8.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Add 8
+        </a>
+        <a href="liquidity-add9.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Add 9
+        </a>
+        <a href="liquidity-add10.html" style="display: block; margin-bottom: 20px;">
+            Liquidity/Add 10
+        </a>
+        <button data-modal="selectTokenModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Select token
+        </button>
+        <button data-modal="transactionSuccessModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Transaction submitted
+        </button>
+        <button data-modal="transactionWaitModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Waiting for confirmation
+        </button>
+        <button data-modal="transactionWaitModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Waiting for confirmation 2
+        </button>
+        <button data-modal="promiseModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            You will receive
+        </button>
+        <button data-modal="promiseModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            You will receive 2
+        </button>
+        <button data-modal="liquidityFailedModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Remove Liquidity failed
+        </button>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="swap.html" style="display: block; margin-bottom: 20px;">
+            Swap
+        </a>
+        <a href="swap2.html" style="display: block; margin-bottom: 20px;">
+            Swap 2
+        </a>
+        <a href="swap3.html" style="display: block; margin-bottom: 20px;">
+            Swap 3
+        </a>
+        <button data-modal="reviewSwapModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Review swap
+        </button>
+        <button data-modal="confirmSwapModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Confirm swap
+        </button>
+        <button data-modal="swapSuccessModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Swap success!
+        </button>
+
+        <hr style="margin-bottom: 20px;">
+        <a href="farm.html" style="display: block; margin-bottom: 20px;">
+            Farm
+        </a>
+        <button data-modal="unstakeModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Unstake LP tokens
+        </button>
+        <button data-modal="unstakeModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Unstake LP tokens 2
+        </button>
+        <button data-modal="unstakeModal3" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Unstake LP tokens 3
+        </button>
+        <button data-modal="roiModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            ROI
+        </button>
+        <hr style="margin-bottom: 20px;">
+
+        <a href="launchpools.html" style="display: block; margin-bottom: 20px;">
+            Launchpools
+        </a>
+        <a href="launchpools-auto.html" style="display: block; margin-bottom: 20px;">
+            Launchpools Auto
+        </a>
+        <a href="launchpools-earn.html" style="display: block; margin-bottom: 20px;">
+            Launchpools Earn
+        </a>
+        <button data-modal="stakeModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Stake SLD Tokens
+        </button>
+        <button data-modal="stakeModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Stake SLD Tokens 2
+        </button>
+        <button data-modal="stakeModal3" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Stake SLD Tokens 3
+        </button>
+        <button data-modal="stakeModal4" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Stake SLD Tokens 4
+        </button>
+        <button data-modal="stakeModal5" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Stake SLD Tokens 5
+        </button>
+        <button data-modal="compoundSldModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Compound SLD Earned
+        </button>
+        <button data-modal="compoundSldModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Compound SLD Earned 2
+        </button>
+
+        <hr style="margin-bottom: 20px;">
+        <a href="history.html" style="display: block; margin-bottom: 20px;">
+            History
+        </a>
+        <a href="team.html" style="display: block; margin-bottom: 20px;">
+            Team
+        </a>
+        <a href="token.html" style="display: block; margin-bottom: 20px;">
+            Token
+        </a>
+        <hr style="margin-bottom: 20px;">
+
+
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Main
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+
+        <button data-modal="connectWalletModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Connect Wallet
+        </button>
+        <button data-modal="connectWalletModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Connect Wallet 2
+        </button>
+        <button data-modal="walletModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Your Wallet
+        </button>
+        <button data-modal="walletModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Opening MetaMask...
+        </button>
+        <button data-modal="walletModal3" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Opening MetaMask... 2
+        </button>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="referal.html" style="display: block; margin-bottom: 20px;">
+            Referal Program
+        </a>
+        <a href="referal2.html" style="display: block; margin-bottom: 20px;">
+            Referal Program 2
+        </a>
+        <a href="referal3.html" style="display: block; margin-bottom: 20px;">
+            Referal Program 3
+        </a>
+
+        <button data-modal="withdrawModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Withdraw
+        </button>
+        <button data-modal="withdrawModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Withdrawal history
+        </button>
+        <button data-modal="welcomeModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Welcome to SolidFi
+        </button>
+
+        <hr style="margin-bottom: 20px;">
+        <a href="analytic.html" style="display: block; margin-bottom: 20px;">
+            Analytics Overview
+        </a>
+        <a href="analytic-tokens.html" style="display: block; margin-bottom: 20px;">
+            Analytics Tokens
+        </a>
+        <a href="analytic-pairs.html" style="display: block; margin-bottom: 20px;">
+            Analytics Pairs
+        </a>
+        <a href="analytic-tokens2.html" style="display: block; margin-bottom: 20px;">
+            Analytics Tokens Item
+        </a>
+        <a href="analytic-pairs2.html" style="display: block; margin-bottom: 20px;">
+            Analytics Pairs Item
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+
+
+
+        <button data-modal="selectTokenModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Select Token
+        </button>
+    </div>
+
+    <div class="modal" id="withdrawModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Withdraw
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="withdraw-field">
+                <input type="text" placeholder="0.00">
+                <div class="withdraw-field__token">
+                    <img src="img/eth.svg" alt="">
+                    <span>SLD</span>
+                </div>
+                <div class="withdraw-field__buttons">
+                    <button class="withdraw-field__btn"><span>25%</span></button>
+                    <button class="withdraw-field__btn"><span>50%</span></button>
+                    <button class="withdraw-field__btn"><span>75%</span></button>
+                    <button class="withdraw-field__btn"><span>MAX</span></button>
+                </div>
+            </div>
+
+            <div class="withdraw-fee">
+                <div class="text16 gray-text medium-text">
+                    Withdrawal fee
+                </div>
+                <div class="m-price">
+                    <span class="text16">0,5</span>
+                    <span class="m-price__currency text16">SLD</span>
+                </div>
+            </div>
+
+            <div class="text12 red-text medium-text">
+                Invalid balance
+            </div>
+
+            <button disabled class="modal__btn m-btn m-btn-blue">
+                <span>Withdraw</span>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="modal welcome-modal" id="welcomeModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Welcome to SolidFi
+                </div>
+            </div>
+
+            <div class="text16 gray-text3">
+                Hey! I’m Soli - devotes Solidfi assistant! Happy to see you in Biswap! Thanks for you choice! Hope you will enjoy our Low Fee Swaps and great earning opportunities.
+            </div>
+
+            <div class="text16 medium-text">
+                Join the friendly Solidfi family!
+            </div>
+
+            <div class="socials">
+                <a href="" class="socials__item m-btn m-btn-blue">
+                    <img src="img/twitter.svg" alt="">
+                </a>
+                <a href="" class="socials__item m-btn m-btn-blue">
+                    <img src="img/discord.svg" alt="">
+                </a>
+                <a href="" class="socials__item m-btn m-btn-blue">
+                    <img src="img/telegram.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal" id="withdrawModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Withdrawal history
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="empty-data__inner">
+                <div class="text20 text20-mob">No Data</div>
+                <div class="text16 medium-text gray-text">There is no data for your request. Try again</div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="modal token-modal _tabs-parent" id="selectTokenModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Select token
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="search-field">
+                <input type="text" placeholder="Select your maNFT">
+                <svg class="search-field__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.5 11.6667C3.5 12.7391 3.71124 13.8011 4.12165 14.7919C4.53206 15.7827 5.13362 16.683 5.89196 17.4414C6.65031 18.1997 7.55059 18.8013 8.54142 19.2117C9.53224 19.6221 10.5942 19.8333 11.6667 19.8333C12.7391 19.8333 13.8011 19.6221 14.7919 19.2117C15.7827 18.8013 16.683 18.1997 17.4414 17.4414C18.1997 16.683 18.8013 15.7827 19.2117 14.7919C19.6221 13.8011 19.8333 12.7391 19.8333 11.6667C19.8333 10.5942 19.6221 9.53224 19.2117 8.54142C18.8013 7.55059 18.1997 6.65031 17.4414 5.89196C16.683 5.13362 15.7827 4.53206 14.7919 4.12165C13.8011 3.71124 12.7391 3.5 11.6667 3.5C10.5942 3.5 9.53224 3.71124 8.54142 4.12165C7.55059 4.53206 6.65031 5.13362 5.89196 5.89196C5.13362 6.65031 4.53206 7.55059 4.12165 8.54142C3.71124 9.53224 3.5 10.5942 3.5 11.6667Z" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M24.5 24.5L17.5 17.5" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+
+
+            <div class="tokens">
+                <div class="token-item">
+                    <input checked type="radio" name="token">
+                    <div class="token-item__inner">
+                        <img src="img/eth.svg" alt="">
+                        <span>
+                        ETH
+                    </span>
+                    </div>
+                </div>
+                <div class="token-item">
+                    <input type="radio" name="token">
+                    <div class="token-item__inner">
+                        <img src="img/usdc.svg" alt="">
+                        <span>
+                        USDC
+                    </span>
+                    </div>
+                </div>
+                <div class="token-item">
+                    <input type="radio" name="token">
+                    <div class="token-item__inner">
+                        <img src="img/dai.svg" alt="">
+                        <span>
+                        DAI
+                    </span>
+                    </div>
+                </div>
+                <div class="token-item">
+                    <input type="radio" name="token">
+                    <div class="token-item__inner">
+                        <img src="img/tether.svg" alt="">
+                        <span>
+                        USDT
+                    </span>
+                    </div>
+                </div>
+                <div class="token-item">
+                    <input type="radio" name="token">
+                    <div class="token-item__inner">
+                        <img src="img/matic.svg" alt="">
+                        <span>
+                        MATIC
+                    </span>
+                    </div>
+                </div>
+                <div class="token-item">
+                    <input type="radio" name="token">
+                    <div class="token-item__inner">
+                        <img src="img/uni.svg" alt="">
+                        <span>
+                        UNI
+                    </span>
+                    </div>
+                </div>
+                <div class="token-item">
+                    <input type="radio" name="token">
+                    <div class="token-item__inner">
+                        <img src="img/sushi.svg" alt="">
+                        <span>
+                        SUSHI
+                    </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tokens2">
+                <div class="token-item2">
+                    <input checked type="radio" name="token2">
+                    <div class="token-item2__inner">
+                        <div class="pair">
+                            <div class="pair__wrap">
+                                <div class="pair__img">
+                                    <img src="img/1INCH.svg" alt="">
+                                </div>
+                                <div class="pair__content">
+                                    <div class="text16">1INCH</div>
+                                    <div class="text16 gray-text3">
+                                        1INCH Token
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="token-item2__nums">
+                            <div class="text16">
+                                0.0424
+                            </div>
+                            <div class="text16">
+                                <span class="gray-text3">$ </span>
+                                12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="token-item2">
+                    <input type="radio" name="token2">
+                    <div class="token-item2__inner">
+                        <div class="pair">
+                            <div class="pair__wrap">
+                                <div class="pair__img">
+                                    <img src="img/BNB.svg" alt="">
+                                </div>
+                                <div class="pair__content">
+                                    <div class="text16">BNB</div>
+                                    <div class="text16 gray-text3">
+                                        Binance Coin
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="token-item2__nums">
+                            <div class="text16">
+                                0.1821
+                            </div>
+                            <div class="text16">
+                                <span class="gray-text3">$ </span>
+                                7.32
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="token-item2">
+                    <input type="radio" name="token2">
+                    <div class="token-item2__inner">
+                        <div class="pair">
+                            <div class="pair__wrap">
+                                <div class="pair__img">
+                                    <img src="img/ADA.svg" alt="">
+                                </div>
+                                <div class="pair__content">
+                                    <div class="text16">ADA</div>
+                                    <div class="text16 gray-text3">
+                                        Cardano Token
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="token-item2__nums">
+                            <div class="text16">
+                                3.7329
+                            </div>
+                            <div class="text16">
+                                <span class="gray-text3">$ </span>
+                                82.8
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="token-item2">
+                    <input type="radio" name="token2">
+                    <div class="token-item2__inner">
+                        <div class="pair">
+                            <div class="pair__wrap">
+                                <div class="pair__img">
+                                    <img src="img/ALPACA.svg" alt="">
+                                </div>
+                                <div class="pair__content">
+                                    <div class="text16">ALPACA</div>
+                                    <div class="text16 gray-text3">
+                                        Alpaca Token
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="token-item2__nums">
+                            <div class="text16">
+                                0.0424
+                            </div>
+                            <div class="text16">
+                                <span class="gray-text3">$ </span>
+                                12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="token-item2">
+                    <input type="radio" name="token2">
+                    <div class="token-item2__inner">
+                        <div class="pair">
+                            <div class="pair__wrap">
+                                <div class="pair__img">
+                                    <img src="img/agEUR.svg" alt="">
+                                </div>
+                                <div class="pair__content">
+                                    <div class="text16">agEUR</div>
+                                    <div class="text16 gray-text3">
+                                        agEUR
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="token-item2__nums">
+                            <div class="text16">
+                                1.6823
+                            </div>
+                            <div class="text16">
+                                <span class="gray-text3">$ </span>
+                                443
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal wallet-modal" id="connectWalletModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Connect Wallet
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="wallets">
+                <div class="wallet-item">
+                    <img src="img/wallet-icon.svg" alt="">
+                    <span>Metamask</span>
+                </div>
+                <div class="wallet-item">
+                    <img src="img/wallet-icon2.svg" alt="">
+                    <span>Rainbow</span>
+                </div>
+                <div class="wallet-item">
+                    <img src="img/wallet-icon3.svg" alt="">
+                    <span>Trust</span>
+                </div>
+                <div class="wallet-item">
+                    <img src="img/wallet-icon4.svg" alt="">
+                    <span>Coinbase</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="modal wallet-modal" id="connectWalletModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Connect Wallet
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="wallets2">
+                <div class="search-field">
+                    <input type="text" placeholder="Select your maNFT">
+                    <svg class="search-field__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 11.6667C3.5 12.7391 3.71124 13.8011 4.12165 14.7919C4.53206 15.7827 5.13362 16.683 5.89196 17.4414C6.65031 18.1997 7.55059 18.8013 8.54142 19.2117C9.53224 19.6221 10.5942 19.8333 11.6667 19.8333C12.7391 19.8333 13.8011 19.6221 14.7919 19.2117C15.7827 18.8013 16.683 18.1997 17.4414 17.4414C18.1997 16.683 18.8013 15.7827 19.2117 14.7919C19.6221 13.8011 19.8333 12.7391 19.8333 11.6667C19.8333 10.5942 19.6221 9.53224 19.2117 8.54142C18.8013 7.55059 18.1997 6.65031 17.4414 5.89196C16.683 5.13362 15.7827 4.53206 14.7919 4.12165C13.8011 3.71124 12.7391 3.5 11.6667 3.5C10.5942 3.5 9.53224 3.71124 8.54142 4.12165C7.55059 4.53206 6.65031 5.13362 5.89196 5.89196C5.13362 6.65031 4.53206 7.55059 4.12165 8.54142C3.71124 9.53224 3.5 10.5942 3.5 11.6667Z" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M24.5 24.5L17.5 17.5" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <div class="wallet-item2">
+                    <img src="img/tether.svg" alt="">
+                    <span>Metamask</span>
+                </div>
+                <div class="wallet-item2">
+                    <img src="img/busd.svg" alt="">
+                    <span>TrastWallet</span>
+                </div>
+                <div class="wallet-item2">
+                    <img src="img/usdc.svg" alt="">
+                    <span>Coinbase Wallet</span>
+                </div>
+                <div class="wallet-item2">
+                    <img src="img/MATIC.svg" alt="">
+                    <span>Rainbow</span>
+                </div>
+                <div class="wallet-item2">
+                    <img src="img/weth.svg" alt="">
+                    <span>Bitkeep</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="modal wallet-modal2" id="walletModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Your Wallet
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="wallet-modal__top">
+                <div class="wallet">
+                    <div class="wallet__content">
+                        <img src="img/wallet2.svg" alt="">
+                        <div class="wallet__info">
+                            <div class="text16 gray-text">Your Address</div>
+                            <div class="text16">0x2daedsmjn3489osmls</div>
+                        </div>
+                    </div>
+                    <button data-text="0x2daedsmjn3489osmls" class="_copy-clipboard wallet__copy">
+                        <img src="img/copy2.svg" alt="">
+                    </button>
+                </div>
+                <div class="wallet-type">
+                    <div class="wallet-type__content">
+                        <img src="img/wallet-icon.svg" alt="">
+                        <span class="text16">Metamask</span>
+                    </div>
+                    <button class="wallet-type__btn m-btn m-btn-blue">
+                        <span>Change</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="empty-data__inner">
+                <div class="text20 text20-mob">Recent transactions</div>
+                <div class="text16 medium-text gray-text">No recent transactions</div>
+            </div>
+
+            <button class="modal__btn m-btn m-btn-blue-outline">
+                <span>Disconnect</span>
+            </button>
+
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>Watch on BscScan</span>
+                    <img src="img/share3.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal wallet-modal3" id="walletModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text"></div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="opening-wallet">
+                <img class="opening-wallet__img" src="img/wallet-icon.svg" alt="">
+                <div class="opening-wallet__text">
+                    <div class="text20 medium-text">
+                        Opening MetaMask...
+                    </div>
+                    <div class="text16 gray-text">
+                        Confirm connection in the extension...
+                    </div>
+                </div>
+            </div>
+
+            <div class="loader">
+                <svg class="circle-chart" viewBox="0 0 35 35" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+                    <circle stroke="rgba(170, 192, 249, 0.2)" opacity="0.3" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="5,5" cx="17.5" cy="17.5" r="15.91549431"></circle>
+                    <circle class="circle-chart__fill" stroke="#fff" stroke-width="3" stroke-dasharray="55,100" stroke-dashoffset="0" stroke-linecap="round" fill="none" cx="17.5" cy="17.5" r="15.91549431"></circle>
+                </svg>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="modal wallet-modal3" id="walletModal3">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text"></div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="opening-wallet">
+                <img class="opening-wallet__img" src="img/wallet-icon.svg" alt="">
+                <div class="opening-wallet__text">
+                    <div class="text20 medium-text">
+                        Opening MetaMask...
+                    </div>
+                    <div class="text16 gray-text">
+                        Confirm connection in the extension...
+                    </div>
+                </div>
+            </div>
+
+            <div class="loader">
+                <svg class="circle-chart" viewBox="0 0 35 35" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+                    <circle stroke="rgba(170, 192, 249, 0.2)" opacity="0.3" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="5,5" cx="17.5" cy="17.5" r="15.91549431"></circle>
+                    <circle class="circle-chart__fill" stroke="#fff" stroke-width="3" stroke-dasharray="55,100" stroke-dashoffset="0" stroke-linecap="round" fill="none" cx="17.5" cy="17.5" r="15.91549431"></circle>
+                </svg>
+            </div>
+
+
+        </div>
+
+        <div class="alert">
+            <button class="alert__close">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#fff" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#fff" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="alert__inner">
+                <img src="img/error.svg" alt="" class="alert__img">
+                <div class="alert__text">
+                    <div class="text16">Error</div>
+                    <div class="text12">Error:invalid address [argumenet=”address”, value=undefined, code=INVALID_ ARGUMENT,version=address/3,45.]</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal bribe-modal bribe-modal2" id="transactionSuccessModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="bribe-modal2__icon">
+                <img src="img/success-icon.svg" alt="">
+            </div>
+            <div class="bribe-modal2__title text20 text20-mob medium-text">
+                Transaction submitted
+            </div>
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>View on BscScan</span>
+                    <img src="img/share2.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal bribe-modal bribe-modal2" id="transactionWaitModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="bribe-modal2__icon">
+                <img src="img/loading2.svg" alt="">
+            </div>
+            <div class="bribe-modal2__title text20 text20-mob medium-text">
+                Waiting for confirmation
+            </div>
+            <div class="bribe-modal2__desc text16 text16-mob">
+                Supplying 0.0032782 BNB and 41.3782 USDT
+            </div>
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    Confirm this transaction in your wallet
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal bribe-modal bribe-modal2" id="transactionWaitModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="bribe-modal2__icon">
+                <img src="img/loading2.svg" alt="">
+            </div>
+            <div class="bribe-modal2__title text20 text20-mob medium-text">
+                Waiting for confirmation
+            </div>
+            <div class="bribe-modal2__desc text16 text16-mob">
+                Removing 41.3214 USDT and 0.0213673 WBNB
+            </div>
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    Confirm this transaction in your wallet
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal promise-modal" id="promiseModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    You will receive
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="liquidity-detail2">
+                <div class="liquidity-detail2__top">
+                    <div class="liquidity-detail2__icons pairs">
+                        <img src="img/eth.svg" alt="">
+                        <img src="img/pepe.svg" alt="">
+                    </div>
+                    <span class="text16">ETH-PEPE</span>
+                    <span class="liquidity-detail2__num text16">12.33</span>
+                </div>
+                <div class="liquidity-detail2__bottom">
+                    <div class="liquidity-detail2__item text16">
+                        DAI-USDT
+                    </div>
+                    <div class="liquidity-detail2__item text16 gray-text opacity-20">
+                        Output is estimated. If the price changes by more that 0.8% your ransaction will revert.
+                    </div>
+                </div>
+            </div>
+
+            <div class="liquidity-select__prop">
+                <div class="liquidity-select__prop-title text16 gray-text opacity-20">
+                    DAI deposited
+                </div>
+                <div class="liquidity-select__prop-desc text16">
+                    <img src="img/tether.svg" alt="">
+                    <span>0.0023432</span>
+                </div>
+            </div>
+
+            <div class="liquidity-select__prop">
+                <div class="liquidity-select__prop-title text16 gray-text opacity-20">
+                    USDT deposited
+                </div>
+                <div class="liquidity-select__prop-desc text16">
+                    <img src="img/dai.svg" alt="">
+                    <span>41.324</span>
+                </div>
+            </div>
+
+            <div class="liquidity-select__prop">
+                <div class="liquidity-select__prop-title text16 gray-text opacity-20">
+                    Share of pool
+                </div>
+                <div class="liquidity-select__prop-desc text16">
+                    <span>342%</span>
+                </div>
+            </div>
+
+            <div class="liquidity-select__prop">
+                <div class="liquidity-select__prop-title text16 gray-text opacity-20">
+                    Rates
+                </div>
+                <div class="liquidity-select__prop-desc text16">
+                    <span>
+                    1 BNB = 415.324 USDT  <br>
+                    1 USDT = 0.00313 BNB
+                </span>
+                </div>
+            </div>
+
+            <button class="promise-modal__btn m-btn m-btn-big m-btn-blue">
+                <span>Confirm Supply</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal promise-modal" id="promiseModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    You will receive
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="merge-fields">
+                <div class="withdraw-field _type3">
+                    <input type="text" readonly>
+                    <div class="withdraw-field__token">
+                        <img src="img/tether.svg" alt="">
+                        <span>USDT</span>
+                        <div class="withdraw-field__token-val text28">10</div>
+                    </div>
+                </div>
+                <div class="withdraw-field _type3">
+                    <input type="text" readonly>
+                    <div class="withdraw-field__token">
+                        <img src="img/bnb.svg" alt="">
+                        <span>BNB</span>
+                        <div class="withdraw-field__token-val text28">0.031342</div>
+                    </div>
+                </div>
+                <div class="merge-fields__arrow">
+                    <img src="img/plus3.svg" alt="">
+                </div>
+            </div>
+
+
+            <div class="promise-modal__info">
+                <div class="text16 gray-text opacity-20">
+                    Output is estimated. If the price changes by more than 0.8% your transaction will revert.
+                </div>
+                <div class="promise-modal__info-wrap">
+                    <div class="text16 gray-text opacity-20">
+                        USDT/WBNB Burned
+                    </div>
+                    <div class="promise-modal__info-exchange _flex">
+                        <div class="pairs">
+                            <img src="img/dai.svg" alt="">
+                            <img src="img/tether.svg" alt="">
+                        </div>
+                        <span class="text16">0.223424</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="promise-modal__btn m-btn m-btn-big m-btn-blue">
+                <span>Confirm</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal bribe-modal _error bribe-modal2" id="liquidityFailedModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="bribe-modal2__icon">
+                <img src="img/error-icon.svg" alt="">
+            </div>
+            <div class="bribe-modal2__title text20 text20-mob medium-text">
+                Remove Liquidity failed
+            </div>
+            <button class="m-btn m-btn-big m-btn-white-outline">
+                <span>Dismiss</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal review-modal" id="reviewSwapModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Review swap
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="merge-fields merge-fields2">
+                <div class="merge-fields__group">
+                    <div class="text12 gray-text opacity-30">
+                        You pay
+                    </div>
+                    <div class="withdraw-field _mt6 _type3">
+                        <input type="text" readonly>
+                        <div class="withdraw-field__token">
+                            <img src="img/tether.svg" alt="">
+                            <span>USDT</span>
+                            <div class="withdraw-field__token-val text28">10</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="merge-fields__group">
+                    <div class="text12 gray-text opacity-30">
+                        You receive
+                    </div>
+                    <div class="withdraw-field _mt6 _type3">
+                        <input type="text" readonly>
+                        <div class="withdraw-field__token">
+                            <img src="img/bnb.svg" alt="">
+                            <span>BNB</span>
+                            <div class="withdraw-field__token-val text28">0.031342</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="promise-modal__info">
+                <div class="promise-modal__item _flex">
+                    <div class="text16 gray-text3">
+                        Rate
+                    </div>
+                    <div class="text16">
+                        1 USDT = 0/00032 BNB <span class="gray-text">($1.00)</span>
+                    </div>
+                </div>
+                <div class="promise-modal__item _flex">
+                    <div class="text16 gray-text3">
+                        Fee
+                    </div>
+                    <div class="text16">
+                        $0
+                    </div>
+                </div>
+                <div class="promise-modal__item _flex">
+                    <div class="text16 gray-text3">
+                        Network cost
+                    </div>
+                    <div class="promise-modal__item-oil _flex">
+                        <img src="img/oil.svg" alt="">
+                        <div class="text16">~$0.9</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="promise-modal__btn m-btn m-btn-big m-btn-blue">
+                <span>Confirm swap</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal bribe-modal bribe-modal2" id="confirmSwapModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="bribe-modal2__icon">
+                <img src="img/loading2.svg" alt="">
+            </div>
+            <div class="bribe-modal2__title text20 text20-mob medium-text">
+                Confirm swap
+            </div>
+            <div class="bribe-modal2__exchange _flex">
+                <div class="bribe-modal2__exchange-item _flex">
+                    <img src="img/tether.svg" alt="">
+                    <span class="text14">
+                    41.3214 USDT
+                </span>
+                </div>
+                <img src="img/arrow4.svg" alt="" class="bribe-modal2__exchange-arrow">
+                <div class="bribe-modal2__exchange-item _flex">
+                    <img src="img/dai.svg" alt="">
+                    <span class="text14">
+                    0.3632 DAI
+                </span>
+                </div>
+            </div>
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    Procees in your wallet
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal bribe-modal bribe-modal2" id="swapSuccessModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="bribe-modal2__icon">
+                <img src="img/success-icon.svg" alt="">
+            </div>
+            <div class="bribe-modal2__title text20 text20-mob medium-text">
+                Swap success!
+            </div>
+            <div class="bribe-modal2__exchange _flex">
+                <div class="bribe-modal2__exchange-item _flex">
+                    <img src="img/tether.svg" alt="">
+                    <span class="text14">
+                    41.3214 USDT
+                </span>
+                </div>
+                <img src="img/arrow4.svg" alt="" class="bribe-modal2__exchange-arrow">
+                <div class="bribe-modal2__exchange-item _flex">
+                    <img src="img/dai.svg" alt="">
+                    <span class="text14">
+                    0.3632 DAI
+                </span>
+                </div>
+            </div>
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>View on Explore</span>
+                    <img src="img/share2.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal unstake-modal" id="unstakeModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Unstake LP tokens
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="farm-merge">
+
+
+
+                <div class="withdraw-field  _type4">
+
+
+                    <input type="text" placeholder="0">
+
+                    <div class="withdraw-field__token">
+                        <div class="pairs">
+                            <img src="img/tether.svg" alt="">
+                            <img src="img/eth.svg" alt="">
+                        </div>
+                        <div class="withdraw-field__content">
+                            <div class="_flex">
+                                <span>USDT/BNB</span>
+                            </div>
+                            <div class="_flex">
+                                <div class="text12 gray-text opacity-30">
+                                    Balance: 10,383
+                                </div>
+                                <button class="withdraw-field__btn _ml8"><span>MAX</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="farm-merge__error">
+                    <div class="text12 red-text">
+                        No tokens to stake: get USDT/BNB
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="unstake-modal__nav">
+                <button class="m-btn m-btn-big m-btn-blue">
+                    <span>Confirm</span>
+                </button>
+                <button class="m-btn m-btn-big m-btn-blue-outline">
+                    <span>Cancel</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal unstake-modal" id="unstakeModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Unstake LP tokens
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="farm-merge">
+
+
+
+                <div class="withdraw-field  _type4">
+
+                    <input type="text" value="10">
+
+
+                    <div class="withdraw-field__token">
+                        <div class="pairs">
+                            <img src="img/tether.svg" alt="">
+                            <img src="img/eth.svg" alt="">
+                        </div>
+                        <div class="withdraw-field__content">
+                            <div class="_flex">
+                                <span>USDT/BNB</span>
+                            </div>
+                            <div class="_flex">
+                                <div class="text12 gray-text opacity-30">
+                                    Balance: 10,383
+                                </div>
+                                <button class="withdraw-field__btn _ml8"><span>MAX</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="farm-merge__error">
+                    <div class="text12 red-text">
+                        No tokens to stake: get USDT/BNB
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="unstake-modal__nav">
+                <button class="m-btn m-btn-big m-btn-blue">
+                    <span>Confirm</span>
+                </button>
+                <button class="m-btn m-btn-big m-btn-blue-outline">
+                    <span>Cancel</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal unstake-modal" id="unstakeModal3">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Unstake LP tokens
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="farm-merge">
+
+
+
+                <div class="withdraw-field _error _type4">
+
+                    <input type="text" value="12,673">
+
+
+                    <div class="withdraw-field__token">
+                        <div class="pairs">
+                            <img src="img/tether.svg" alt="">
+                            <img src="img/eth.svg" alt="">
+                        </div>
+                        <div class="withdraw-field__content">
+                            <div class="_flex">
+                                <span>USDT/BNB</span>
+                            </div>
+                            <div class="_flex">
+                                <div class="text12 gray-text opacity-30">
+                                    Balance: 10,383
+                                </div>
+                                <button class="withdraw-field__btn _ml8"><span>MAX</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="farm-merge__error">
+                    <div class="text12 red-text">
+                        No tokens to stake: get USDT/BNB
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="unstake-modal__nav">
+                <button class="m-btn m-btn-big m-btn-blue">
+                    <span>Confirm</span>
+                </button>
+                <button class="m-btn m-btn-big m-btn-blue-outline">
+                    <span>Cancel</span>
+                </button>
+            </div>
+
+
+            <div class="unstake-modal__nav2">
+                <button class="unstake-modal__btn">
+                    <span class="text12">Get USDT/BNB</span>
+                    <img src="img/share2.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal roi-modal" id="roiModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    ROI
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="roi-modal__desc text16 gray-text3">
+                Calculated based on current rates. Rates are estimates provided fot you
+            </div>
+
+            <table class="roi-table">
+                <thead>
+                    <tr>
+                        <th><span class="text16">Timeframe</span></th>
+                        <th><span class="text16">ROI</span></th>
+                        <th><span class="text16">SLD per $1 000</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="text14">1d</div>
+                        </td>
+                        <td>
+                            <div class="text14">0.04%</div>
+                        </td>
+                        <td>
+                            <div class="text14">3.21 SLD</div>
+                            <div class="text14 gray-text3">$2.31</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="text14">7d</div>
+                        </td>
+                        <td>
+                            <div class="text14">0.28%</div>
+                        </td>
+                        <td>
+                            <div class="text14">22.46 SLD</div>
+                            <div class="text14 gray-text3">$2.31</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="text14">30d</div>
+                        </td>
+                        <td>
+                            <div class="text14">1.21%</div>
+                        </td>
+                        <td>
+                            <div class="text14">96.25 SLD</div>
+                            <div class="text14 gray-text3">$2.31</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="text14">365d</div>
+                        </td>
+                        <td>
+                            <div class="text14">14.71%</div>
+                        </td>
+                        <td>
+                            <div class="text14">1171.3 SLD</div>
+                            <div class="text14 gray-text3">$2.31</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="text14">365d (APY)</div>
+                        </td>
+                        <td>
+                            <div class="text14">24.08%</div>
+                        </td>
+                        <td>
+                            <div class="text14">1916.1 SLD</div>
+                            <div class="text14 gray-text3">$2.31</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal unstake-modal" id="stakeModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Stake SLD Tokens
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="launchpool-merge">
+                <div class="withdraw-field ">
+
+
+                    <input type="text" placeholder="0.00">
+
+                    <div class="withdraw-field__token">
+                        <img src="img/sld.svg" alt="">
+                        <span>SLD</span>
+                    </div>
+                    <div class="withdraw-field__hint">
+                        <div class="text12 gray-text4 medium-text">
+                            Balance: 10,32893
+                        </div>
+                        <div class="text12 red-text medium-text">
+                            Invalid balance
+                        </div>
+                    </div>
+                    <div class="withdraw-field__buttons">
+                        <button class="withdraw-field__btn"><span>MAX</span></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="unstake-modal__nav">
+                <button disabled class="m-btn m-btn-big m-btn-blue">
+                    <span>Confirm</span>
+                </button>
+                <button class="m-btn m-btn-big m-btn-blue-outline">
+                    <span>Cancel</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal unstake-modal" id="stakeModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Stake SLD Tokens
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="launchpool-merge">
+                <div class="withdraw-field ">
+
+                    <input type="text" value="13.03">
+
+
+                    <div class="withdraw-field__token">
+                        <img src="img/sld.svg" alt="">
+                        <span>SLD</span>
+                    </div>
+                    <div class="withdraw-field__hint">
+                        <div class="text12 gray-text4 medium-text">
+                            Balance: 10,32893
+                        </div>
+                        <div class="text12 red-text medium-text">
+                            Invalid balance
+                        </div>
+                    </div>
+                    <div class="withdraw-field__buttons">
+                        <button class="withdraw-field__btn"><span>MAX</span></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="unstake-modal__nav">
+                <button class="m-btn m-btn-big m-btn-blue">
+                    <span>Confirm</span>
+                </button>
+                <button class="m-btn m-btn-big m-btn-blue-outline">
+                    <span>Cancel</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal unstake-modal" id="stakeModal3">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Stake SLD Tokens
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="launchpool-merge">
+                <div class="withdraw-field ">
+
+                    <input type="text" value="13.03">
+
+
+                    <div class="withdraw-field__token">
+                        <img src="img/sld.svg" alt="">
+                        <span>SLD</span>
+                    </div>
+                    <div class="withdraw-field__hint">
+                        <div class="text12 gray-text4 medium-text">
+                            Balance: 10,32893
+                        </div>
+                        <div class="text12 red-text medium-text">
+                            Invalid balance
+                        </div>
+                    </div>
+                    <div class="withdraw-field__buttons">
+                        <button class="withdraw-field__btn"><span>MAX</span></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="unstake-modal__nav">
+                <button disabled class="m-btn m-btn-big m-btn-blue">
+                    <img src="img/loading.svg" alt="">
+                    <span>Loading...</span>
+                </button>
+                <button class="m-btn m-btn-big m-btn-blue-outline">
+                    <span>Cancel</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal unstake-modal" id="stakeModal4">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Stake SLD Tokens
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="launchpool-merge">
+                <div class="withdraw-field ">
+
+                    <input type="text" value="13.03">
+
+
+                    <div class="withdraw-field__token">
+                        <img src="img/sld.svg" alt="">
+                        <span>SLD</span>
+                    </div>
+                    <div class="withdraw-field__hint">
+                        <div class="text12 gray-text4 medium-text">
+                            Balance: 10,32893
+                        </div>
+                        <div class="text12 red-text medium-text">
+                            Invalid balance
+                        </div>
+                    </div>
+                    <div class="withdraw-field__buttons">
+                        <button class="withdraw-field__btn"><span>MAX</span></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="_flex-between">
+                <div class="hint-wrap">
+                    <div class="text14 gray-text medium-text">
+                        You will get
+                    </div>
+                    <div class="hint-block">
+                        <button class="hint-wrap__btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 10C17.5 9.01509 17.306 8.03982 16.9291 7.12987C16.5522 6.21993 15.9997 5.39314 15.3033 4.6967C14.6069 4.00026 13.7801 3.44781 12.8701 3.0709C11.9602 2.69399 10.9849 2.5 10 2.5C9.01509 2.5 8.03982 2.69399 7.12987 3.0709C6.21993 3.44781 5.39314 4.00026 4.6967 4.6967C4.00026 5.39314 3.44781 6.21993 3.0709 7.12987C2.69399 8.03982 2.5 9.01509 2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10 12.5V9.16667" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10 6.66699V6.65866" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="hint-block__wrap">
+                            <div class="hint-block__inner">
+                                <div class="text16 gray-text">
+                                    Note% There is a commission of 25% from you withdrawal sum active for 90 days for withdrawal from the Pool after any Stake action. On the 91th day, th commission is 0% for withdrawal from the Pool
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text14 primary-text">
+                    0.00000 SLD
+                </div>
+            </div>
+
+            <div class="unstake-modal__nav">
+                <button class="m-btn m-btn-big m-btn-blue">
+                    <span>Confirm</span>
+                </button>
+                <button class="m-btn m-btn-big m-btn-blue-outline">
+                    <span>Cancel</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal unstake-modal" id="stakeModal5">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Stake SLD Tokens
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="launchpool-merge">
+                <div class="withdraw-field _error">
+
+                    <input type="text" value="13.03">
+
+
+                    <div class="withdraw-field__token">
+                        <img src="img/sld.svg" alt="">
+                        <span>SLD</span>
+                    </div>
+                    <div class="withdraw-field__hint">
+                        <div class="text12 gray-text4 medium-text">
+                            Balance: 10,32893
+                        </div>
+                        <div class="text12 red-text medium-text">
+                            Invalid balance
+                        </div>
+                    </div>
+                    <div class="withdraw-field__buttons">
+                        <button class="withdraw-field__btn"><span>MAX</span></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="_flex-between">
+                <div class="hint-wrap">
+                    <div class="text14 gray-text medium-text">
+                        You will get
+                    </div>
+                    <div class="hint-block">
+                        <button class="hint-wrap__btn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 10C17.5 9.01509 17.306 8.03982 16.9291 7.12987C16.5522 6.21993 15.9997 5.39314 15.3033 4.6967C14.6069 4.00026 13.7801 3.44781 12.8701 3.0709C11.9602 2.69399 10.9849 2.5 10 2.5C9.01509 2.5 8.03982 2.69399 7.12987 3.0709C6.21993 3.44781 5.39314 4.00026 4.6967 4.6967C4.00026 5.39314 3.44781 6.21993 3.0709 7.12987C2.69399 8.03982 2.5 9.01509 2.5 10C2.5 10.9849 2.69399 11.9602 3.0709 12.8701C3.44781 13.7801 4.00026 14.6069 4.6967 15.3033C5.39314 15.9997 6.21993 16.5522 7.12987 16.9291C8.03982 17.306 9.01509 17.5 10 17.5C10.9849 17.5 11.9602 17.306 12.8701 16.9291C13.7801 16.5522 14.6069 15.9997 15.3033 15.3033C15.9997 14.6069 16.5522 13.7801 16.9291 12.8701C17.306 11.9602 17.5 10.9849 17.5 10Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10 12.5V9.16667" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10 6.66699V6.65866" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="hint-block__wrap">
+                            <div class="hint-block__inner">
+                                <div class="text16 gray-text">
+                                    Note% There is a commission of 25% from you withdrawal sum active for 90 days for withdrawal from the Pool after any Stake action. On the 91th day, th commission is 0% for withdrawal from the Pool
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text14 primary-text">
+                    0.00000 SLD
+                </div>
+            </div>
+
+            <div class="unstake-modal__nav">
+                <button class="m-btn m-btn-big m-btn-blue">
+                    <span>Confirm</span>
+                </button>
+                <button class="m-btn m-btn-big m-btn-blue-outline">
+                    <span>Cancel</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal unstake-modal" id="compoundSldModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Compound SLD Earned
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="launchpool-merge _center">
+                <div class="withdraw-field">
+                    <input type="text" value="0.13424">
+                </div>
+            </div>
+
+            <div class="unstake-modal__nav">
+                <button class="m-btn m-btn-big m-btn-blue">
+                    <span>Confirm</span>
+                </button>
+                <button class="m-btn m-btn-big m-btn-blue-outline">
+                    <span>Cancel</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal unstake-modal" id="compoundSldModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Compound SLD Earned
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="launchpool-merge _center">
+                <div class="withdraw-field">
+                    <input type="text" value="0.13424">
+                </div>
+            </div>
+
+            <div class="unstake-modal__nav">
+                <button disabled class="m-btn m-btn-big m-btn-blue">
+                    <img src="img/loading.svg" alt="">
+                    <span>Loading...</span>
+                </button>
+                <button class="m-btn m-btn-big m-btn-blue-outline">
+                    <span>Cancel</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

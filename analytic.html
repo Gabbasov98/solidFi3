@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="" class="header__logo">
+                        <img class="_view1" src="img/logo4.webp" alt="">
+                        <img class="_view2" src="img/logo6.webp" alt="">
+                    </a>
+
+                    <div class="menu">
+                        <nav class="nav">
+                            <a href="" class="nav__link _active">Swap</a>
+                            <a href="" class="nav__link">Liquidity</a>
+                            <a href="" class="nav__link">Farm</a>
+                            <a href="" class="nav__link">Pools</a>
+                            <a href="" class="nav__link">Referal Program</a>
+                            <a href="" class="nav__link">About QNS</a>
+                            <a href="" class="nav__link">Team</a>
+                            <a href="" class="nav__link">Docs</a>
+                            <a href="" class="nav__link">Audits</a>
+                        </nav>
+
+                        <div class="header-socials">
+                            <a href="" class="header-socials__item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.70996 3.3335L13.4875 16.6668H17.0433L7.26579 3.3335H3.70996Z" stroke="#98A1C0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.70996 16.6668L9.34996 11.0268M11.4 8.97683L17.0433 3.3335" stroke="#98A1C0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="" class="header-socials__item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.377 20C15.8998 20 20.377 15.5228 20.377 10C20.377 4.47715 15.8998 0 10.377 0C4.85411 0 0.376953 4.47715 0.376953 10C0.376953 15.5228 4.85411 20 10.377 20ZM10.377 4C8.16781 4 6.37695 5.79086 6.37695 8V15H14.377V8C14.377 5.79086 12.5861 4 10.377 4Z" fill="#98A1C0" />
+                                </svg>
+                            </a>
+                            <a href="" class="header-socials__item">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.01765 4.29688C9.13293 4.29688 11.6582 6.83973 11.6582 9.97628C11.6582 13.1128 9.13274 15.6555 6.01765 15.6555C2.90256 15.6555 0.376953 13.1128 0.376953 9.97628C0.376953 6.83973 2.90237 4.29688 6.01765 4.29688ZM15.0254 4.62956C16.5831 4.62956 17.8458 7.02313 17.8458 9.97628H17.846C17.846 12.9287 16.5833 15.323 15.0256 15.323C13.468 15.323 12.2053 12.9287 12.2053 9.97628C12.2053 7.0239 13.4678 4.62956 15.0254 4.62956ZM19.385 5.18646C19.9327 5.18646 20.377 7.3309 20.377 9.97628C20.377 12.6209 19.9329 14.7661 19.385 14.7661C18.8371 14.7661 18.3933 12.6215 18.3933 9.97628C18.3933 7.33109 18.8373 5.18646 19.385 5.18646Z" fill="#98A1C0" />
+                                </svg>
+                            </a>
+                            <a href="" class="header-socials__item">
+                                <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.7533 0.774336L1.03427 7.64254C0.321222 7.96238 0.0800499 8.60289 0.861925 8.9505L5.40763 10.4026L16.3986 3.57484C16.9987 3.14621 17.613 3.26051 17.0844 3.73203L7.64466 12.3232L7.34813 15.959C7.62278 16.5204 8.12567 16.523 8.44645 16.244L11.0581 13.76L15.5309 17.1267C16.5698 17.7449 17.1351 17.346 17.3586 16.2129L20.2924 2.24922C20.597 0.854492 20.0775 0.239961 18.7533 0.774336Z" fill="#98A1C0" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="theme-switch">
+                            <button class="theme-switch__btn _view1" data-theme="light">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.0017 2.99994C12.1337 2.99994 12.2647 2.99994 12.3947 2.99994C11.1101 4.19365 10.2843 5.79979 10.061 7.53916C9.83772 9.27854 10.231 11.0412 11.1725 12.5207C12.1139 14.0002 13.5441 15.103 15.2143 15.6374C16.8846 16.1718 18.6893 16.1041 20.3147 15.4459C19.6895 16.9504 18.6675 18.257 17.3579 19.2262C16.0483 20.1954 14.5002 20.791 12.8786 20.9493C11.2571 21.1077 9.623 20.8229 8.15062 20.1253C6.67825 19.4278 5.42285 18.3436 4.51832 16.9885C3.6138 15.6334 3.09409 14.0582 3.01462 12.4309C2.93515 10.8036 3.29892 9.18524 4.06711 7.74846C4.8353 6.31167 5.9791 5.11037 7.3765 4.27268C8.7739 3.43499 10.3725 2.99234 12.0017 2.99194V2.99994Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="theme-switch__btn _view2" data-theme="dark">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.23438 12C9.23438 12.7956 9.55045 13.5587 10.1131 14.1213C10.6757 14.6839 11.4387 15 12.2344 15C13.03 15 13.7931 14.6839 14.3557 14.1213C14.9183 13.5587 15.2344 12.7956 15.2344 12C15.2344 11.2044 14.9183 10.4413 14.3557 9.87868C13.7931 9.31607 13.03 9 12.2344 9C11.4387 9 10.6757 9.31607 10.1131 9.87868C9.55045 10.4413 9.23438 11.2044 9.23438 12Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.2344 5V5.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.2344 7V7.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M19.2344 12V12.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.2344 17V17.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.2344 19V19.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.23438 17V17.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M5.23438 12V12.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.23438 7V7.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="header-action">
+                        <div class="theme-switch">
+                            <button class="theme-switch__btn _view1" data-theme="light">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.0017 2.99994C12.1337 2.99994 12.2647 2.99994 12.3947 2.99994C11.1101 4.19365 10.2843 5.79979 10.061 7.53916C9.83772 9.27854 10.231 11.0412 11.1725 12.5207C12.1139 14.0002 13.5441 15.103 15.2143 15.6374C16.8846 16.1718 18.6893 16.1041 20.3147 15.4459C19.6895 16.9504 18.6675 18.257 17.3579 19.2262C16.0483 20.1954 14.5002 20.791 12.8786 20.9493C11.2571 21.1077 9.623 20.8229 8.15062 20.1253C6.67825 19.4278 5.42285 18.3436 4.51832 16.9885C3.6138 15.6334 3.09409 14.0582 3.01462 12.4309C2.93515 10.8036 3.29892 9.18524 4.06711 7.74846C4.8353 6.31167 5.9791 5.11037 7.3765 4.27268C8.7739 3.43499 10.3725 2.99234 12.0017 2.99194V2.99994Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="theme-switch__btn _view2" data-theme="dark">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.23438 12C9.23438 12.7956 9.55045 13.5587 10.1131 14.1213C10.6757 14.6839 11.4387 15 12.2344 15C13.03 15 13.7931 14.6839 14.3557 14.1213C14.9183 13.5587 15.2344 12.7956 15.2344 12C15.2344 11.2044 14.9183 10.4413 14.3557 9.87868C13.7931 9.31607 13.03 9 12.2344 9C11.4387 9 10.6757 9.31607 10.1131 9.87868C9.55045 10.4413 9.23438 11.2044 9.23438 12Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.2344 5V5.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.2344 7V7.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M19.2344 12V12.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M17.2344 17V17.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.2344 19V19.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.23438 17V17.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M5.23438 12V12.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.23438 7V7.01" stroke="#98A1C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+
+
+
+                        <a href="" class="header-action__btn m-btn m-btn-blue">
+                            <img src="img/wallet.svg" alt="">
+                            <span>Connect Wallet</span>
+                        </a>
+
+
+                    </div>
+                    <button class="burger">
+                        <svg class="_view1" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66406 10H33.3307" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66406 20H33.3307" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.66406 30H33.3307" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg class="_view2" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.33594 1.33325L6.66927 6.66659M6.66927 1.33325L1.33594 6.66659" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <section class="analytic">
+                <div class="container">
+                    <div class="analytic__top">
+                        <div class="analytic__title text32 medium-text">Analytics</div>
+
+                        <div class="analytic__links">
+                            <a href="" class="analytic__link _active">
+                                <span>Overview</span>
+                            </a>
+                            <a href="" class="analytic__link">
+                                <span>Tokens</span>
+                            </a>
+                            <a href="" class="analytic__link">
+                                <span>Pairs</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="analytic-nav">
+                        <div class="search-field">
+                            <input type="text" placeholder="Search Pair or Token">
+                            <svg class="search-field__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.5 11.6667C3.5 12.7391 3.71124 13.8011 4.12165 14.7919C4.53206 15.7827 5.13362 16.683 5.89196 17.4414C6.65031 18.1997 7.55059 18.8013 8.54142 19.2117C9.53224 19.6221 10.5942 19.8333 11.6667 19.8333C12.7391 19.8333 13.8011 19.6221 14.7919 19.2117C15.7827 18.8013 16.683 18.1997 17.4414 17.4414C18.1997 16.683 18.8013 15.7827 19.2117 14.7919C19.6221 13.8011 19.8333 12.7391 19.8333 11.6667C19.8333 10.5942 19.6221 9.53224 19.2117 8.54142C18.8013 7.55059 18.1997 6.65031 17.4414 5.89196C16.683 5.13362 15.7827 4.53206 14.7919 4.12165C13.8011 3.71124 12.7391 3.5 11.6667 3.5C10.5942 3.5 9.53224 3.71124 8.54142 4.12165C7.55059 4.53206 6.65031 5.13362 5.89196 5.89196C5.13362 6.65031 4.53206 7.55059 4.12165 8.54142C3.71124 9.53224 3.5 10.5942 3.5 11.6667Z" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M24.5 24.5L17.5 17.5" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <div class="filter-item">
+                            <button class="filter-item__btn">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.9974 23.3332L10.4974 24.4998V14.5832L5.27073 8.83384C4.88042 8.40442 4.66412 7.84497 4.66406 7.26467V4.6665H23.3307V7.2005C23.3306 7.81929 23.0847 8.41269 22.6471 8.85017L17.4974 13.9998V17.4998" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M18.6641 22.1665H25.6641" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M22.1641 18.6665V25.6665" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="filter-dropdown">
+                                <div class="triangle"><span></span></div>
+                                <div class="filter-dropdown__top">
+                                    <div class="text16">Filter</div>
+                                </div>
+                                <div class="filter-dropdown__radios">
+                                    <div class="m-radio">
+                                        <input checked type="radio" name="type">
+                                        <div class="m-radio__icon"></div>
+                                        <div class="m-radio__text">
+                                            <span class="text16">V1</span>
+                                        </div>
+                                    </div>
+                                    <div class="m-radio">
+                                        <input type="radio" name="type">
+                                        <div class="m-radio__icon"></div>
+                                        <div class="m-radio__text">
+                                            <span class="text16">Fusion</span>
+                                        </div>
+                                    </div>
+                                    <div class="m-radio">
+                                        <input type="radio" name="type">
+                                        <div class="m-radio__icon"></div>
+                                        <div class="m-radio__text">
+                                            <span class="text16">Total</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="analytic-stat">
+                        <div class="chart-card">
+                            <div class="chart-stat">
+                                <div class="text14 gray-text2 medium-text">
+                                    Liquidity
+                                </div>
+                                <div class="chart-stat__nums">
+                                    <div class="chart-stat__price text24 medium-text">
+                                        <span class="gray-text">$ </span>
+                                        32,430.37
+                                    </div>
+
+                                    <div class="status-badge">
+                                        <span>+2.3%</span>
+                                    </div>
+                                </div>
+                                <div class="text16 gray-text medium-text">
+                                    Jun 26, 2023
+                                </div>
+                            </div>
+
+                            <div id="chart" class="chart"></div>
+                        </div>
+                        <div class="chart-card">
+                            <div class="chart-stat">
+                                <div class="text14 gray-text2 medium-text">
+                                    Liquidity
+                                </div>
+                                <div class="chart-stat__nums">
+                                    <div class="chart-stat__price text24 medium-text">
+                                        <span class="gray-text">$ </span>
+                                        32,430.37
+                                    </div>
+
+                                    <div class="status-badge">
+                                        <span>+2.3%</span>
+                                    </div>
+                                </div>
+                                <div class="text16 gray-text medium-text">
+                                    Jun 26, 2023
+                                </div>
+                            </div>
+
+                            <div id="chart2" class="chart"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="top-tokens mob-table__wrap">
+                        <div class="text16 medium-text gray-text2">
+                            Top tokens
+                        </div>
+
+                        <div class="m-table mob-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th><span>Pair</span></th>
+                                        <th><span>Price</span></th>
+                                        <th><span>Price Change</span></th>
+                                        <th><span>24H Volume</span></th>
+                                        <th><span>Liquidity</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="pair">
+                                                <div class="favourite-btn">
+                                                    <div class="favourite-btn__icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.162 11.9987L4.04733 14.162L4.83333 9.58L1.5 6.33533L6.1 5.66867L8.15733 1.5L10.2147 5.66867L14.8147 6.33533L11.4813 9.58L12.2673 14.162L8.162 11.9987Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="pair__wrap">
+                                                    <div class="pair__img">
+                                                        <img src="img/tether.svg" alt="">
+                                                    </div>
+                                                    <div class="pair__content">
+                                                        <div class="text14">Wrapped BNB</div>
+                                                        <div class="text14 gray-text3">WBNB</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Price
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 432.3
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Price Change
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="status-badge ">
+                                                    <span>+2.3%</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 5,246,252.99
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Liquidity
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pair">
+                                                <div class="favourite-btn">
+                                                    <div class="favourite-btn__icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.162 11.9987L4.04733 14.162L4.83333 9.58L1.5 6.33533L6.1 5.66867L8.15733 1.5L10.2147 5.66867L14.8147 6.33533L11.4813 9.58L12.2673 14.162L8.162 11.9987Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="pair__wrap">
+                                                    <div class="pair__img">
+                                                        <img src="img/tether.svg" alt="">
+                                                    </div>
+                                                    <div class="pair__content">
+                                                        <div class="text14">Wrapped BNB</div>
+                                                        <div class="text14 gray-text3">WBNB</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Price
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 432.3
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Price Change
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="status-badge _red">
+                                                    <span>-0.7%</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 5,246,252.99
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Liquidity
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pair">
+                                                <div class="favourite-btn">
+                                                    <div class="favourite-btn__icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.162 11.9987L4.04733 14.162L4.83333 9.58L1.5 6.33533L6.1 5.66867L8.15733 1.5L10.2147 5.66867L14.8147 6.33533L11.4813 9.58L12.2673 14.162L8.162 11.9987Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="pair__wrap">
+                                                    <div class="pair__img">
+                                                        <img src="img/tether.svg" alt="">
+                                                    </div>
+                                                    <div class="pair__content">
+                                                        <div class="text14">Wrapped BNB</div>
+                                                        <div class="text14 gray-text3">WBNB</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Price
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 432.3
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Price Change
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="status-badge ">
+                                                    <span>+2.3%</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 5,246,252.99
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Liquidity
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pair">
+                                                <div class="favourite-btn">
+                                                    <div class="favourite-btn__icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.162 11.9987L4.04733 14.162L4.83333 9.58L1.5 6.33533L6.1 5.66867L8.15733 1.5L10.2147 5.66867L14.8147 6.33533L11.4813 9.58L12.2673 14.162L8.162 11.9987Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="pair__wrap">
+                                                    <div class="pair__img">
+                                                        <img src="img/tether.svg" alt="">
+                                                    </div>
+                                                    <div class="pair__content">
+                                                        <div class="text14">Wrapped BNB</div>
+                                                        <div class="text14 gray-text3">WBNB</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Price
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 432.3
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Price Change
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="status-badge _red">
+                                                    <span>-0.7%</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 5,246,252.99
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Liquidity
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pair">
+                                                <div class="favourite-btn">
+                                                    <div class="favourite-btn__icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.162 11.9987L4.04733 14.162L4.83333 9.58L1.5 6.33533L6.1 5.66867L8.15733 1.5L10.2147 5.66867L14.8147 6.33533L11.4813 9.58L12.2673 14.162L8.162 11.9987Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="pair__wrap">
+                                                    <div class="pair__img">
+                                                        <img src="img/tether.svg" alt="">
+                                                    </div>
+                                                    <div class="pair__content">
+                                                        <div class="text14">Wrapped BNB</div>
+                                                        <div class="text14 gray-text3">WBNB</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Price
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 432.3
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Price Change
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="status-badge ">
+                                                    <span>+2.3%</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 5,246,252.99
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Liquidity
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pair">
+                                                <div class="favourite-btn">
+                                                    <div class="favourite-btn__icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.162 11.9987L4.04733 14.162L4.83333 9.58L1.5 6.33533L6.1 5.66867L8.15733 1.5L10.2147 5.66867L14.8147 6.33533L11.4813 9.58L12.2673 14.162L8.162 11.9987Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="pair__wrap">
+                                                    <div class="pair__img">
+                                                        <img src="img/tether.svg" alt="">
+                                                    </div>
+                                                    <div class="pair__content">
+                                                        <div class="text14">Wrapped BNB</div>
+                                                        <div class="text14 gray-text3">WBNB</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Price
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 432.3
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Price Change
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="status-badge _red">
+                                                    <span>-0.7%</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 5,246,252.99
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Liquidity
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <div class="pagination">
+                                <button class="pagination__btn _disabled">
+                                    <img src="img/prev.svg" alt="">
+                                </button>
+                                <div class="pagination__title text16">
+                                    Page 1 of 6
+                                </div>
+                                <button class="pagination__btn">
+                                    <img src="img/next.svg" alt="">
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="top-pairs mob-table__wrap">
+                        <div class="text16 medium-text gray-text2">
+                            Top Pairs
+                        </div>
+
+                        <div class="m-table mob-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th><span>Pair</span></th>
+                                        <th><span>Liquidity</span></th>
+                                        <th><span>24H Volume</span></th>
+                                        <th><span>7D Volume</span></th>
+                                        <th><span>24H Fees</span></th>
+                                        <th><span>7D Fees</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="pair">
+                                                <div class="favourite-btn">
+                                                    <div class="favourite-btn__icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.162 11.9987L4.04733 14.162L4.83333 9.58L1.5 6.33533L6.1 5.66867L8.15733 1.5L10.2147 5.66867L14.8147 6.33533L11.4813 9.58L12.2673 14.162L8.162 11.9987Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="pair__wrap">
+                                                    <div class="pair__items">
+                                                        <div class="pair__img">
+                                                            <img src="img/tether.svg" alt="">
+                                                        </div>
+                                                        <div class="pair__img">
+                                                            <img src="img/wbnb.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="pair__content">
+                                                        <div class="text14">USDT/WBNB</div>
+                                                        <div class="text14 gray-text3">0.2202% Fee</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Liquidity
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 432.3
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    21,462.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                7D Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    5,246,252.99
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Fees
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                7D Fees
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pair">
+                                                <div class="favourite-btn">
+                                                    <div class="favourite-btn__icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.162 11.9987L4.04733 14.162L4.83333 9.58L1.5 6.33533L6.1 5.66867L8.15733 1.5L10.2147 5.66867L14.8147 6.33533L11.4813 9.58L12.2673 14.162L8.162 11.9987Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="pair__wrap">
+                                                    <div class="pair__items">
+                                                        <div class="pair__img">
+                                                            <img src="img/tether.svg" alt="">
+                                                        </div>
+                                                        <div class="pair__img">
+                                                            <img src="img/wbnb.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="pair__content">
+                                                        <div class="text14">USDT/WBNB</div>
+                                                        <div class="text14 gray-text3">0.2202% Fee</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Liquidity
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 432.3
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    21,462.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                7D Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    5,246,252.99
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Fees
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                7D Fees
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pair">
+                                                <div class="favourite-btn">
+                                                    <div class="favourite-btn__icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.162 11.9987L4.04733 14.162L4.83333 9.58L1.5 6.33533L6.1 5.66867L8.15733 1.5L10.2147 5.66867L14.8147 6.33533L11.4813 9.58L12.2673 14.162L8.162 11.9987Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="pair__wrap">
+                                                    <div class="pair__items">
+                                                        <div class="pair__img">
+                                                            <img src="img/tether.svg" alt="">
+                                                        </div>
+                                                        <div class="pair__img">
+                                                            <img src="img/wbnb.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="pair__content">
+                                                        <div class="text14">USDT/WBNB</div>
+                                                        <div class="text14 gray-text3">0.2202% Fee</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Liquidity
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 432.3
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    21,462.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                7D Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    5,246,252.99
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Fees
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                7D Fees
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pair">
+                                                <div class="favourite-btn">
+                                                    <div class="favourite-btn__icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.162 11.9987L4.04733 14.162L4.83333 9.58L1.5 6.33533L6.1 5.66867L8.15733 1.5L10.2147 5.66867L14.8147 6.33533L11.4813 9.58L12.2673 14.162L8.162 11.9987Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="pair__wrap">
+                                                    <div class="pair__items">
+                                                        <div class="pair__img">
+                                                            <img src="img/tether.svg" alt="">
+                                                        </div>
+                                                        <div class="pair__img">
+                                                            <img src="img/wbnb.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="pair__content">
+                                                        <div class="text14">USDT/WBNB</div>
+                                                        <div class="text14 gray-text3">0.2202% Fee</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Liquidity
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 432.3
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    21,462.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                7D Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    5,246,252.99
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Fees
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                7D Fees
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pair">
+                                                <div class="favourite-btn">
+                                                    <div class="favourite-btn__icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.162 11.9987L4.04733 14.162L4.83333 9.58L1.5 6.33533L6.1 5.66867L8.15733 1.5L10.2147 5.66867L14.8147 6.33533L11.4813 9.58L12.2673 14.162L8.162 11.9987Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="pair__wrap">
+                                                    <div class="pair__items">
+                                                        <div class="pair__img">
+                                                            <img src="img/tether.svg" alt="">
+                                                        </div>
+                                                        <div class="pair__img">
+                                                            <img src="img/wbnb.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="pair__content">
+                                                        <div class="text14">USDT/WBNB</div>
+                                                        <div class="text14 gray-text3">0.2202% Fee</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Liquidity
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 432.3
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    21,462.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                7D Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    5,246,252.99
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Fees
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                7D Fees
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="pair">
+                                                <div class="favourite-btn">
+                                                    <div class="favourite-btn__icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.162 11.9987L4.04733 14.162L4.83333 9.58L1.5 6.33533L6.1 5.66867L8.15733 1.5L10.2147 5.66867L14.8147 6.33533L11.4813 9.58L12.2673 14.162L8.162 11.9987Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="pair__wrap">
+                                                    <div class="pair__items">
+                                                        <div class="pair__img">
+                                                            <img src="img/tether.svg" alt="">
+                                                        </div>
+                                                        <div class="pair__img">
+                                                            <img src="img/wbnb.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="pair__content">
+                                                        <div class="text14">USDT/WBNB</div>
+                                                        <div class="text14 gray-text3">0.2202% Fee</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                Liquidity
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span> 432.3
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    21,462.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                7D Volume
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    5,246,252.99
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                24H Fees
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mob-table__title">
+                                                7D Fees
+                                            </div>
+                                            <div class="mob-table__desc">
+                                                <div class="text14">
+                                                    <span class="gray-text3">$ </span>
+                                                    1,353,632.33
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <div class="pagination">
+                                <button class="pagination__btn _disabled">
+                                    <img src="img/prev.svg" alt="">
+                                </button>
+                                <div class="pagination__title text16">
+                                    Page 1 of 6
+                                </div>
+                                <button class="pagination__btn">
+                                    <img src="img/next.svg" alt="">
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
