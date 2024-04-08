@@ -241,6 +241,18 @@
         <button data-modal="selectTokenModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
             Select Token
         </button>
+        <button data-modal="stackSuccessModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Staked 20 SLD
+        </button>
+        <button data-alert="SuccessfullAlert" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Transaction Successfull
+        </button>
+        <button data-alert="ErrorAlert" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Error
+        </button>
+        <button data-alert="CopyAlert" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Link Copied!
+        </button>
     </div>
 
     <div class="modal" id="withdrawModal">
@@ -1127,6 +1139,49 @@
         </div>
     </div>
 
+    <div class="modal bribe-modal bribe-modal2" id="stackSuccessModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="bribe-modal2__icon">
+                <img src="img/success-icon.svg" alt="">
+            </div>
+            <div class="bribe-modal2__title text20 text20-mob medium-text">
+                Staked 20 SLD
+            </div>
+            <div class="bribe-modal2__desc text14">
+                Share your earning on Twitter and share $520 in SLD <br> with 100 winners weekly!
+            </div>
+            <div class="bribe-modal__buttons">
+                <div class="bribe-modal__socials">
+                    <button class="bribe-modal__social m-btn m-btn-white-outline">
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.3764 0.774336L0.657315 7.64254C-0.0557314 7.96238 -0.296903 8.60289 0.484971 8.9505L5.03067 10.4026L16.0216 3.57484C16.6217 3.14621 17.2361 3.26051 16.7074 3.73203L7.2677 12.3232L6.97118 15.959C7.24583 16.5204 7.74872 16.523 8.0695 16.244L10.6811 13.76L15.154 17.1267C16.1929 17.7449 16.7581 17.346 16.9816 16.2129L19.9154 2.24922C20.22 0.854492 19.7006 0.239961 18.3764 0.774336Z" fill="white" />
+                        </svg>
+                        <span>Telegram</span>
+                    </button>
+                    <button class="bribe-modal__social m-btn m-btn-white-outline">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.83398 3.33337L13.6115 16.6667H17.1673L7.38982 3.33337H3.83398Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M3.83398 16.6667L9.47398 11.0267M11.524 8.97671L17.1673 3.33337" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Twitter</span>
+                    </button>
+                </div>
+                <button class="bribe-modal__btn">
+                    <span>View on Explore</span>
+                    <img src="img/share2.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
     <div class="modal unstake-modal" id="unstakeModal">
         <div class="modal__bg _close-modal"></div>
         <div class="modal__dialog">
@@ -1817,6 +1872,58 @@
         </div>
     </div>
 
+
+    <div class="m-alert" id="SuccessfullAlert">
+        <img src="img/alert-icon.svg" alt="" class="m-alert__icon">
+        <div class="m-alert__content">
+            <div class="text16">
+                Transaction Successfull
+            </div>
+            <button class="unstake-modal__btn">
+                <span class="text12">View on BscScan</span>
+                <img src="img/share4.svg" alt="">
+            </button>
+        </div>
+        <button class="m-alert__close _close-alert">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.66602 6.66666L9.33268 9.33332M9.33268 6.66666L6.66602 9.33332" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8 2C12.8 2 14 3.2 14 8C14 12.8 12.8 14 8 14C3.2 14 2 12.8 2 8C2 3.2 3.2 2 8 2Z" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+
+    <div class="m-alert m-alert--red" id="ErrorAlert">
+        <img src="img/alert-icon2.svg" alt="" class="m-alert__icon">
+        <div class="m-alert__content">
+            <div class="text16">
+                Error
+            </div>
+            <div class="text12">
+                MetaMask Tx Signature: User denied transaction signature.
+            </div>
+        </div>
+        <button class="m-alert__close _close-alert">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.66602 6.66666L9.33268 9.33332M9.33268 6.66666L6.66602 9.33332" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8 2C12.8 2 14 3.2 14 8C14 12.8 12.8 14 8 14C3.2 14 2 12.8 2 8C2 3.2 3.2 2 8 2Z" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+
+    <div class="m-alert m-alert--blue" id="CopyAlert">
+        <img src="img/alert-icon.svg" alt="" class="m-alert__icon">
+        <div class="m-alert__content">
+            <div class="text16">
+                Link Copied!
+            </div>
+        </div>
+        <button class="m-alert__close _close-alert">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.66602 6.66666L9.33268 9.33332M9.33268 6.66666L6.66602 9.33332" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8 2C12.8 2 14 3.2 14 8C14 12.8 12.8 14 8 14C3.2 14 2 12.8 2 8C2 3.2 3.2 2 8 2Z" stroke="white" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
 
     <!--  -->
     <script src="js/libs.min.js"></script>
